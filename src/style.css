@@ -1,0 +1,58 @@
+/* Personnalisation légère en complément de Tailwind */
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Animation d'apparition des sections */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation d'apparition des sections */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Style du bouton retour en haut */
+button.fixed {
+  transition: transform 0.3s ease-in-out;
+}
+
+button.fixed:hover {
+  transform: scale(1.1);
+}
+
+#contact-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

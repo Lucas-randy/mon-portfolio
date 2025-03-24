@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Randy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <header
+      class="bg-teal-500 hover:bg-teal-700 text-white p-6 text-center relative overflow-hidden transition-colors duration-300 ease-in-out group group-hover:bg-teal-700"
+    >
+      <!-- Titre avec animation au survol -->
+      <h1 class="text-4xl font-bold tracking-widest">
+        <span
+          class="inline-block transition-transform duration-500 ease-in-out transform group-hover:translate-x-4"
+          >Bienvenue sur</span
+        >
+        <span
+          class="inline-block transition-transform duration-500 ease-in-out transform group-hover:translate-x-4"
+          >mon portfolio</span
+        >
+      </h1>
+
+      <!-- Sous-titre avec animation de zoom et changement de couleur -->
+      <p
+        class="text-lg mt-4 text-opacity-80 group-hover:text-opacity-100 transition duration-300 transform group hover:scale-105"
+      >
+        Développeur Front-End | HTML | CSS | JavaScript | Bootstrap | Tailwind
+      </p>
+    </header>
+
+    <section class="p-8 bg-gray-700 shadow-md rounded-lg w-full">
+      <h2 class="text-2xl font-bold mb-4 text-gray-300">À propos de moi</h2>
+      <p class="text-gray-300">
+        Passionné par le métier du web, je suis un développeur front-end avec
+        une touche de back-end. Voici une sélection de mes projets :
+      </p>
+    </section>
+
+    <section
+      class="p-8 bg-gray-800 text-white shadow-md rounded-lg mx-0 w-full"
+    >
+      <h2 class="text-2xl font-bold mb-4 text-gray-300">Projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div
+          class="relative group w-full max-w-3xl p-6 border rounded-lg shadow hover:shadow-lg transition cursor-pointer overflow-hidden"
+        >
+          <!-- Titre visible par défaut -->
+          <h3 class="text-xl font-semibold text-center text-gray-300">
+            Réservation de voitures disponibles 🚗
+          </h3>
+
+          <!-- Contenu caché qui apparaît au survol -->
+          <div
+            class="max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out group-hover:max-h-[200px] group-hover:opacity-100"
+          >
+            <p class="mt-4 mb-4 text-gray-300">
+              Cette application web permet de :
+            </p>
+            <ul class="space-y-4 text-gray-300">
+              <li
+                class="group relative p-4 rounded-md shadow-sm bg-gradient-to-r from-blue-400 to-purple-500 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+              >
+                <div class="flex items-center gap-1">
+                  <div
+                    class="text-xl transition-transform duration-500 group-hover:rotate-180"
+                  >
+                    ⚙️
+                  </div>
+                  <span class="text-sm font-semibold text-white text-gray-300"
+                    >Gérer les voitures dans la base de données</span
+                  >
+                </div>
+
+                <!-- Ligne animée qui suit la souris -->
+                <div
+                  class="absolute left-0 bottom-0 w-0 h-1 bg-white transition-all duration-500 ease-in-out group-hover:w-full"
+                ></div>
+              </li>
+
+              <li
+                class="group relative p-4 rounded-md shadow-sm bg-gradient-to-r from-green-400 to-teal-500 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl cursor-pointer"
+              >
+                <div class="flex items-center gap-1">
+                  <div
+                    class="text-xl transition-transform duration-500 group-hover:rotate-180"
+                  >
+                    🚀
+                  </div>
+                  <span class="text-sm font-semibold text-gray-300"
+                    >Réserver les voitures disponibles</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="relative group w-full max-w-3xl p-6 border rounded-lg shadow hover:shadow-lg transition cursor-pointer overflow-hidden"
+        >
+          <h3 class="text-xl font-semibold text-center text-gray-300">
+            Blog de fitness (en cours)
+          </h3>
+
+          <div
+            class="max-h-0 opacity-0 overflow-hidden transition-all duration-500 ease-in-out group-hover:max-h-[300px] group-hover:opacity-100"
+          >
+            <p class="text-sm mt-2 text-gray-300">
+              Ce blog est une application web qui a pour but de proposer des
+              programmes premium pour ceux qui souhaitent perdre du poids 🧘🏻‍♀️ ou
+              gagner du muscle 💪🏼. Les internautes pourront faire une simulation
+              gratuite pour obtenir un programme personnalisé avec des exercices
+              🏋🏽 et alimentation 🥑. Un calculateur de calories automatisé sera
+              aussi inclus.
+            </p>
+          </div>
+        </div>
+
+        <!-- Deuxième projet : Site vitrine pour un restaurant -->
+        <div
+          class="relative group w-full max-w-3xl p-6 border rounded-lg shadow hover:shadow-lg transition cursor-pointer overflow-hidden"
+        >
+          <h3 class="text-xl font-semibold text-center text-gray-300">
+            🚀 Site vitrine pour un restaurant 🍽️ (en cours)
+          </h3>
+
+          <p
+            class="text-sm mt-2 text-gray-300 opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-[300px] transition-all duration-500 ease-in-out"
+          >
+            Ce site présente un restaurant fictif 🍕 avec une belle ambiance 🕯️
+            et un menu varié 🥗. L’objectif est de créer une expérience de
+            navigation fluide et moderne pour les visiteurs 🌐. Venez découvrir
+            nos plats délicieux 🍲 !
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="p-6 bg-gray-800 rounded-xl shadow-xl text-center transition-all duration-500 hover:bg-gray-700"
+    >
+      <h2 class="text-3xl font-bold mb-4 text-blue-400">Contactez-moi</h2>
+
+      <div
+        id="contact-links"
+        class="flex justify-center gap-4 flex-wrap transition-all duration-500"
+      ></div>
+    </section>
+
+    <footer
+      class="bg-teal-500 hover:bg-teal-700 text-white p-4 text-center transition-colors duration-300 ease-in-out"
+    >
+      <p>&copy; 2025 Randy | Portfolio</p>
+    </footer>
+  </body>
+</html>
