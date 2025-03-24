@@ -1,6 +1,6 @@
 export default function Contact() {
   const contacts = [
-    { icon: "📧", label: "Email", link: "randylucas.4m@gmail.com" },
+    { icon: "📧", label: "Email", link: "mailto:randylucas.4m@gmail.com" },
     { icon: "📱", label: "Téléphone", link: "tel:+261346759199" },
     {
       icon: "🔗",
